@@ -1,7 +1,35 @@
-<form action="/signup" method="post">
-  <link rel="stylesheet" href="../static/signup.css" />
-  Sign up:<br>
-  username: <input type="text" name="un"> <br>
-  password: <input type="password" name="pw"> <br>
-  <input type="submit">
-</form>
+<head>
+  <link rel="stylesheet" href="../static/login.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Login Form Demo</title>
+</head>
+<body>
+  <div class="login-wrapper">
+    <form action="/register" method="post" class="form">
+      <h2>Register</h2>
+      <div class="input-group">
+        <input type="text" name="loginUser" id="loginUser" required />
+        <label for="loginUser">User Name</label>
+      </div>
+      <div class="input-group">
+        <input
+          type="password" name="loginPassword" id="loginPassword" required />
+        <label for="loginPassword">Password</label>
+      </div>
+      <div class="input-group">
+        <input
+          type="password"
+          name="repeatPassword"
+          id="repeatPassword"
+          required
+        />
+        <label for="repeatPassword">Repeat Password</label>
+      </div>
+      <input type="submit" value="Register" class="submit-btn" />
+      <a style="color: white" href="/">Login </a>
+    </form>
+    <p></p>
+  </div>
+</body>
